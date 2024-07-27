@@ -20,7 +20,7 @@
     word-spacing: 3px;
     letter-spacing: .8px;
 }
-
+/* 
 #seconds {
     opacity: 0;
     animation: fadeinphoto forwards 1s infinite;
@@ -39,4 +39,4 @@
     100% {
         opacity: 0;
     }
-}
+} */
