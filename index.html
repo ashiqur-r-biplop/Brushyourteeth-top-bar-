@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="top-bar">
+        <p class="top-bar-title">This story will change your dental routine! Specific Date - <span
+                id="specific-date"></span></p>
+    </div>
+    <script>
+        const renderDate = () => {
+            const specificDate = new Date();
+
+            const day = specificDate.getDate();
+            const month = specificDate.getMonth() + 1;
+            const year = specificDate.getFullYear();
+            console.log(day);
+
+            document.getElementById("specific-date").innerText = `${day < 10 ? `0${day}` : `${day}`}  : ${month < 10 ? `0${month}` : `${month}`} : ${year} `
+        }
+        renderDate()
+    </script>
 </body>
+
 </html>

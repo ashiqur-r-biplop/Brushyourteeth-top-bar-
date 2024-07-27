@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: #3E4959;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.top-bar-title {
+    max-width: 1167px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    word-spacing: 3px;
+    letter-spacing: .8px;
 }
