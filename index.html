@@ -10,8 +10,11 @@
 
 <body>
     <div class="top-bar">
-        <p class="top-bar-title">This story will change your dental routine! Specific Date - <span
-                id="specific-date"></span></p>
+        <p class="top-bar-title">This story will change your dental routine! Specific Date - <span id="specific-date">
+                <span id="date"></span> :
+                <span id="month"></span> :
+                <span id="year"></span>
+            </span></p>
     </div>
     <script>
         const renderDate = () => {
@@ -22,7 +25,10 @@
             const year = specificDate.getFullYear();
             console.log(day);
 
-            document.getElementById("specific-date").innerText = `${day < 10 ? `0${day}` : `${day}`}  : ${month < 10 ? `0${month}` : `${month}`} : ${year} `
+            // document.getElementById("specific-date").innerText = `${day < 10 ? `0${day}` : `${day}`} : ${month < 10 ? `0${month}` : `${month}`} : ${year}`
+            document.getElementById("date").innerText = `${day < 10 ? `0${day}` : `${day}`}`
+            document.getElementById("month").innerText = `${month < 10 ? `0${month}` : `${month}`}`
+            document.getElementById("year").innerText = `${year}`
         }
         renderDate()
     </script>
