@@ -21,11 +21,9 @@
     letter-spacing: .8px;
 }
 
-#date,
-#month,
-#year {
+#seconds {
     opacity: 0;
-    animation: fadeinphoto forwards 2.5s infinite;
+    animation: fadeinphoto forwards 1s infinite;
     animation-timing-function: linear;
 }
 
